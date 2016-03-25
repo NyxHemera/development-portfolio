@@ -1,0 +1,97 @@
+.animated-underline (@color: #000, @timer: 0.3s, @height: 2px, @width: 100%, @distance: -4px) {
+	&:before {
+		height: @height;
+		bottom: @distance;
+		left: 0;
+		content: "";
+		position: absolute;
+		width: @width;
+		background-color: @color;
+		visibility: hidden;
+		transform: scaleX(0);
+		transition: all @timer ease-in-out 0s;
+	}
+	&:hover:before {
+		visibility: visible;
+		transform: scaleX(1);
+	}
+}
+
+.animated-tagline (@content: "", @timer: 0.3s, @height: 20px){
+	&:before {
+		height: @height;
+		bottom: 0;
+		left: 0;
+		z-index: 5;
+		content: @content;
+		position: absolute;
+		font-family: 'Montserrat';
+		width: 100%;
+		background: blue;
+		visibility: hidden;
+		transform: scaleY(0);
+		transition: all @timer ease-in-out 0s;
+	}
+	&:hover:before {
+		visibility: visible;
+		transform: scaleY(1);
+	}
+}
+
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
+	-webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+	-moz-border-radius: @topleft @topright @bottomright @bottomleft;
+	border-radius: @topleft @topright @bottomright @bottomleft;
+}
+
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+	-webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	-moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+.link-colors (@link: white, @visited: white, @hover: white, @active: white) {
+	& {
+		color: @link;
+		&:visited {
+			color: @visited;
+		}
+		&:hover {
+			color: @hover;
+		}
+		&:active, &:focus {
+			color: @active;
+		}
+	}
+}
+
+.noselect () {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.transition (@property: all, @time: 1s, @ease: linear) {
+	-webkit-transition: @property @time @ease;
+	-moz-transition: @property @time @ease;
+	-o-transition: @property @time @ease;
+	-ms-transition: @property @time @ease;
+	transition: @property @time @ease;
+}
+
+.vertical-align(@position: relative) {
+  position: @position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

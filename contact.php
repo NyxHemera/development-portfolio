@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" href="css/contact.css"/>
+	<link rel="stylesheet" href="css/common.css"/>
+</head>
+
+<body id="body-contact">
+	
+	<?php include 'header.php'; ?>
+	<div id="main-content">
+		<div class="topline"></div>
+		<div id="wrap-contact">
+				<h3>Ready to talk?</h3>
+				<p>The fastest way to reach me is by email.</p>
+				<h3><a href="mailto:jordan.rust92@gmail.com?&subject=Web Development">jordan.rust92@gmail.com</a></h3>
+				<p>You can also reach out to me through social media!</p>
+				<ul>
+					<a href="https://github.com/NyxHemera"><li><i class="fa fa-github"></i></li></a>
+					<a href="https://www.linkedin.com/in/jordan-rust-3ab54340?trk=nav_responsive_tab_profile"><li><i class="fa fa-linkedin"></i></li></a>
+					<a href="https://www.facebook.com/jordan.rust.98"><li><i class="fa fa-facebook"></i></li></a>
+				</ul>
+		</div>
+	</div>
+	<?php include 'footer.php'; ?>
+</body>
+</html>

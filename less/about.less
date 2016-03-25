@@ -1,0 +1,76 @@
+@import "style.less";
+
+#body-about {
+	h1, h2, h3, h4, h5, h6 {
+		font-variant: small-caps;
+	}
+}
+
+#btn-download {
+	margin: 0 auto;
+	margin-top: 2em;
+	text-align: center;
+	h4 {
+		padding: 2px;
+		.border-radius(5px);
+		border: @menutext solid 2px;
+		color: @menutext;
+		display: inline-block;
+		.transition(all, .3s, linear);
+		&:hover {
+			color: @darkmenutext;
+			border-color: @darkmenutext;
+		}
+	}
+}
+
+#wrap-experience {
+	margin: 2em auto 2em auto;
+	width: 50%;
+	height: auto;
+	>h2 {
+		text-align: center;
+		.font(@headerfont, 4.5vmin);
+	}
+	>h3 {
+		margin: 1em 0 1em 0;
+		.font(@headerfont, 3.5vmin);
+		box-sizing: border-box;
+		border-bottom: solid 1px #eaeaea;
+	}
+}
+
+.experience-cell {
+	margin-bottom: .5em;
+	width: 100%;
+	text-align: left;
+	clear: both;
+	h4 {
+		float: left;
+		width: 100%;
+		.font(@headerfont, 3.3vmin);
+		span {
+			float: right;
+			.font(@headerfont, 2.8vmin);
+			font-variant: small-caps;
+			bottom: 0;
+		}
+	}
+	>h5 {
+		float: left;
+		clear: both;
+		.font(@headerfont, 2.8vmin);
+	}
+	>p {
+		clear: both;
+		.font(@paragraphfont, 2.4vmin);
+		color: lighten(@darkmenutext, 20%);
+	}
+}
+
+
+@media screen and (max-width: 700px) {
+    #wrap-experience {
+        width: 90%;
+    }
+}

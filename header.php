@@ -1,0 +1,42 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/header.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+	<div id="wrap-header">
+		<div id="wrap-name">
+			<a href="index.php"><h3 id="name" class="text">Jordan Rust</h3></a>
+		</div>
+		<div id="wrap-nav">
+			<ul id="social-header">
+				<a href="https://github.com/NyxHemera"><li><i class="fa fa-github"></i></li></a>
+				<a href="https://www.linkedin.com/in/jordan-rust-3ab54340?trk=nav_responsive_tab_profile"><li><i class="fa fa-linkedin"></i></li></a>
+				<a href="https://www.facebook.com/jordan.rust.98"><li><i class="fa fa-facebook"></i></li></a>
+				<a href="mailto:jordan.rust92@gmail.com?&subject=Web Development"><li><i class="fa fa-envelope"></i></li></a>
+			</ul>
+			<ul id="menu-header">
+				<a href="work.php"><li>Work</li></a>
+				<a href="about.php"><li>About</li></a>
+				<!--<a href="/blog.php"><li>Blog</li></a>-->
+				<a href="contact.php"><li>Contact</li></a>
+			</ul>
+			
+		</div>
+		<label for="nav-trigger">&#9776;</label>
+	</div>
+	<ul class="navigation">
+	    <a href="index.php"><li class="nav-item"><h3>Home</h3></li></a>
+	    <a href="work.php"><li class="nav-item"><h3>Portfolio</h3></li></a>
+	    <a href="about.php"><li class="nav-item"><h3>About</h3></li></a>
+	    <a href="contact.php"><li class="nav-item"><h3>Contact</h3></li></a>
+	</ul>
+	<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+	<div class="site-wrap">
+</body>
+</html>

@@ -1,0 +1,35 @@
+@import "style.less";
+
+#wrap-contact {
+	padding-top: 3em;
+	padding-bottom: 3em;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	h3 {
+		padding: .2em;
+		text-align: center;
+		font-weight: 700;
+		.font(@headerfont, 4vmin);
+	}
+	p {
+		padding: .3em;
+		text-align: center;
+		.font(@paragraphfont, 3vmin);
+	}
+	ul {
+		margin-top: 2em;
+		list-style: none;
+		li {
+			margin: 0 1vw 0 1vw;
+			float: left;
+			position: relative;
+			font-size: 3.5vmin;
+			.link-colors(@menutext, @menutext, @darkmenutext, @darkmenutext);
+			.transition(color, 0.15s, linear);
+		}
+	}
+}

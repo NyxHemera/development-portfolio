@@ -1,0 +1,31 @@
+@import "starter.less";
+@menutext: #ababab;
+@darkmenutext: darken(@menutext, 50%);
+@lighttext: #f7f7f7;
+@headerfont: 'Montserrat', sans-serif;
+@paragraphfont: 'Georgia', 'Times', serif;
+
+html {
+	height: 100%;
+	
+}
+body {
+	position: relative;
+	min-height: 100%;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, a{
+	.font(@headerfont);
+	color: @darkmenutext;
+	text-decoration: none;
+}
+p {
+	.font(@paragraphfont);
+	color: @darkmenutext;
+}
+
+.font(@font: 'Times', @size: 1em) {
+	font-family: @font;
+	font-size: @size;
+}

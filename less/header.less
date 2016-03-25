@@ -1,0 +1,142 @@
+@import "style.less";
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#body-about	#menu-header > a[href*="about"] > li {
+	color: @darkmenutext;
+}
+#body-blog #menu-header > a[href*="blog"] > li {
+	color: @darkmenutext;
+}
+#body-contact #menu-header > a[href*="contact"] > li {
+	color: @darkmenutext;
+}
+#body-work #menu-header > a[href*="work"] > li {
+	color: @darkmenutext;
+}
+
+#menu-header {
+	float: right;
+	list-style: none;
+	li {
+		margin: 0 1vw 0 1vw;
+		float: left;
+		position: relative;
+
+		.font(@headerfont, 2.5vmin);
+		text-transform: uppercase;
+		text-decoration: none;
+		.link-colors(@menutext, @menutext, @darkmenutext, @darkmenutext);
+		.transition(color, 0.15s, linear);
+		.animated-underline(@darkmenutext, 0.3s, 2px, 100%, -4px);
+	}
+}
+
+#name {
+	float: right;
+	position: relative;
+	.font(@headerfont, 4vmin);
+	font-variant: small-caps;
+	color: @darkmenutext;
+	.animated-underline(@darkmenutext, 0.3s, 3px, 100%, -4px);
+}
+
+#social-header {
+	float: right;
+	margin-right: 5vw;
+	list-style: none;
+	li {
+		margin: 0 .5vw 0 .5vw;
+		float: left;
+		position: relative;
+		font-size: 3vmin;
+		text-decoration: none;
+		.link-colors(@menutext, @menutext, @darkmenutext, @darkmenutext);
+		.transition(color, 0.15s, linear);
+	}
+}
+
+#wrap-header {
+	display: flex;
+	flex-direction: row nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 10vh;
+	box-sizing: border-box;
+	border-bottom: solid 1px #eaeaea;
+}
+
+#wrap-nav {
+	flex: 2;
+}
+#wrap-name {
+	flex: 1;
+}
+
+.navigation {
+	list-style: none;
+	background: white;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 10vh;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 0;
+	li {
+		padding-left: 2em;
+		display: flex;
+		align-items: center;
+		height: 3em;
+		text-size: 2em;
+		border-top: solid 1px #ababab;
+	}
+}
+
+.nav-trigger {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+	display: none;
+}
+
+label[for="nav-trigger"] {
+	padding-right: 1em;
+	z-index: 2;
+	display: none;
+	font-size: 2em;
+	cursor: pointer;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+    transform: translateY(12em);
+    box-shadow: 0 0 3px 5px rgba(0,0,0,0.3);
+}
+
+.nav-trigger + label, .site-wrap {
+    transition: transform 0.3s;
+}
+
+.site-wrap {
+	min-width: 100%;
+	min-height: 90vh;
+	background-color: #fff;
+	position: relative;
+	top: 0;
+	bottom: 100%;
+	left: 0;
+	z-index: 1;
+}
+
+@media screen and (max-width: 500px) {
+    .nav-trigger, label[for="nav-trigger"] {
+		display: inline;
+	}
+
+	#menu-header, #social-header {
+		display: none;
+	}
+}
