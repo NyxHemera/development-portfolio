@@ -36,11 +36,11 @@
 					</a>
 				</div>
 				<div>
-					<a href="http://codepen.io/NyxHemera/full/bEJMZB/">
-					<img src="/media/icon-textclock.jpg">
+					<a href="http://nyxhemera.github.io/tetris-ga/">
+					<img src="/media/icon-tetris.jpg">
 					<div class="overlay">
-						<h2>Text Clock</h2>
-						<p>My take on the famous qlocktwo text based clock.</p>
+						<h2>Tetris</h2>
+						<p>My take on Tetris, along with a new cooperative mode where you work alongside a partner to complete lines.</p>
 					</div>
 					</a>
 				</div>
