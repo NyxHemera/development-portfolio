@@ -6,7 +6,7 @@
 </head>
 
 <body>
-	<?php include 'header.php'; ?>
+	<%= erb :header %>
 	<div id="main-content">
 		<div id="wrap-hero">
 			<p>My name is Jordan Rust and I'm a Web Developer in Atlanta, Georgia.</p>
@@ -47,13 +47,13 @@
 			</div>
 			<div class="row">
 				<div id="btn-more">
-					<a href="work.php">
+					<a href="/work">
 					<h4>See More <i class="fa fa-arrow-right"></i></h4>
 					</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<?php include 'footer.php'; ?>
+	<%= erb :footer %>
 </body>
 </html>
